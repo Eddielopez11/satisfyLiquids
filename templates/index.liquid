@@ -7,6 +7,32 @@
     - http://docs.shopify.com/themes/liquid-variables/global
 {% endcomment %}
 
+<div class="carousel-wrapper">
+  <div class="dot--container">
+    <span id="dot1" class="dot"></span>
+    <span id="dot2" class="dot"></span>
+    <span id="dot3" class="dot"></span>
+  </div>
+  <div class="bannerSlides slide1">
+    <p class="slide-header"><br><span class="slide-span"></span></p>
+    <img class="bannerImage" src="{{ 'satisfy7-flavors.jpg' | asset_url }}" alt="">
+  </div>
+  <div class="bannerSlides slide2">
+    <p class="slide-header"><br><span class="slide-span"></span></p>
+    <img class="bannerImage" src="{{ 'satisfy7-flavors.jpg' | asset_url }}" alt="">
+  </div>
+  <div class="bannerSlides slide3">
+    <p class="slide-header"><br><span class="slide-span"></span></p>
+    <img class="bannerImage" src="{{ 'satisfy7-flavors.jpg' | asset_url }}" alt="">
+  </div>
+  <div class="slide-arrow-container slide-arrow-left">
+    <span class="slide-arrows"><</span>
+  </div>
+  <div class="slide-arrow-container slide-arrow-right">
+    <span class="slide-arrows">></span>
+  </div>
+</div>
+
 <h2>{{ 'homepage.sections.frontpage_title' | t }}</h2>
 
 {% comment %}

@@ -222,7 +222,7 @@
       </div>
     </header>
 
-    <nav class="nav-bar" role="navigation">
+    <nav class="nav-bar site-navCustom" role="navigation">
       <div class="wrapper">
         <div class="medium-down--hide">
           {% comment %}
@@ -433,6 +433,8 @@
       });
     </script>
   {% endif %}
+
+  {{ 'custom.js' | asset_url | script_tag }}
 
 </body>
 </html>
