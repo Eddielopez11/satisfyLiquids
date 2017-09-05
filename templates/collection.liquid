@@ -93,7 +93,7 @@
   </div>
 
   <div class="grid__item large--one-quarter">
-    <img src="{{ collection.handle | append: '.png' | asset_url }}" alt="">
+    <img src="{{ collection.handle | append: '.png' | asset_url }}" alt="{{ collection.handle | append: ' logo' }}">
     {% include 'collection-sidebar' %}
   </div>
 </div>
