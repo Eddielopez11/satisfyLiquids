@@ -2553,15 +2553,21 @@ label.error {
 {% endif %} // settings.ajax_cart_method
 
 
-/*====================================Custom CSS=================*/
+/*
+// Custom CSS
+*/
 
-/*====================================Nav==========================*/
+/*
+// Nav
+*/
 
 .site-navCustom {
   font-weight: 700;
 }
 
-/*====================================Index=========================*/
+/*
+// Index
+*/
 .index-wrapper {
   position: relative;
   width: 100%;
@@ -2699,4 +2705,17 @@ label.error {
   margin-top: -30px;
   float:left;
   width: 100%;
+}
+
+/*
+// PDF VIEWER
+*/
+
+.pdf-viewer {
+  height: 930px;
+  width: 700px;
+  @include at-query ($max, $small) {
+    height: auto;
+    width: 100%;
+  }
 }
