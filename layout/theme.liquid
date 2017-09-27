@@ -1,3 +1,7 @@
+{%- comment %}<locksmith:fb2e>{% endcomment -%}
+  {%- include 'locksmith', locksmith_context: 'layout/start' %}{% capture locksmith_source -%}
+{%- comment %}</locksmith:fb2e>{% endcomment -%}
+
 <!doctype html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
@@ -18,7 +22,10 @@
   </title>
 
   {% if page_description %}
-  <meta name="description" content="{{ page_description | escape }}">
+  {%- comment %}<locksmith:9b0e>{% endcomment -%}
+    {% include 'locksmith-variables', locksmith_hiding_scope: 'resource' %}{% if locksmith_transparent %}<meta name="description" content="{{ page_description | escape }}">{% endif %}
+    {%- comment %}original: <meta name="description" content="{{ page_description | escape }}">{%- endcomment %}
+  {%- comment %}</locksmith:9b0e>{% endcomment -%}
   {% endif %}
 
   <!-- Helpers ================================================== -->
@@ -440,3 +447,8 @@
 
 </body>
 </html>
+
+
+{%- comment %}<locksmith:eaa3>{% endcomment -%}
+  {%- endcapture %}{% include 'locksmith', locksmith_context: 'layout/end' -%}
+{%- comment %}</locksmith:eaa3>{% endcomment -%}
